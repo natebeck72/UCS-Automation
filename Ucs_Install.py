@@ -24,7 +24,8 @@ print (mo)
 
 from ucsmsdk.mometa.compute.ComputeChassisDiscPolicy import ComputeChassisDiscPolicy
 
-mo = ComputeChassisDiscPolicy(parent_mo_or_dn="org-root", rebalance="user-acknowledged", action=(sheet.cell.value(8.1)), descr="", name="", policy_owner="local", link_aggregation_pref="none")
+mo = ComputeChassisDiscPolicy(parent_mo_or_dn="org-root", rebalance="user-acknowledged", descr="",
+                              action=(sheet.cell.value(8.1)), name="", policy_owner="local", link_aggregation_pref="none")
 handle.add_mo(mo, True)
 
 handle.commit()
